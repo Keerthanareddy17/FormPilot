@@ -40,23 +40,25 @@ This project combines the following components:
 
 The form filling logic is orchestrated via a **LangGraph pipeline** with the following nodes:
 
-1. ### `label_mapper`
+1. **`label_mapper`**
    - Maps raw field labels (e.g. "Full Name") to memory keys (e.g. `name`)
    - Uses a predefined mapping dictionary
 
-2. ### `memory_fetcher`
+2. **`memory_fetcher`**
    - Looks up each mapped key in `memory.json`
    - Retrieves corresponding values if available
 
-3. ### `missing_detector`
+3. **`missing_detector`**
    - Identifies fields that are still unfilled (value is empty or `None`)
 
-4. ### `fallback_generator`
+4. **`fallback_generator`**
    - For missing fields, injects a placeholder like `[Please fill Email]`
    - Also **updates memory** with this placeholder to ensure consistent rendering
 
-5. ### `final_consolidator`
+5. **`final_consolidator`**
    - Merges filled and fallback fields into a unified list
+
+<img width="275" alt="Screenshot 2025-06-15 at 19 38 24" src="https://github.com/user-attachments/assets/60266060-42c0-4ad3-befc-c474918fad79" />
 
 ---
 
@@ -74,7 +76,7 @@ The form filling logic is orchestrated via a **LangGraph pipeline** with the fol
 ## 🧪 Use Case
 Imagine you're applying for a job online. The form asks for:
 
--Name
+- Name
 - Email
 - Phone
 - LinkedIn
@@ -90,6 +92,8 @@ Imagine you're applying for a job online. The form asks for:
 - Let you edit fields, which immediately updates memory
 - Reduce redundant typing across different forms or sessions
 
+<img width="1685" alt="Screenshot 2025-06-15 at 19 10 29" src="https://github.com/user-attachments/assets/24c5b07e-cca6-4628-9686-38f77520fb8f" />
+
 ---
 
 ## 📌 Limitations & To-Do
@@ -103,5 +107,6 @@ Imagine you're applying for a job online. The form asks for:
 ---
 
 Drop in a mail or a text on linkeidn if there's anything you'd like to discuss about this repo!!
-Email: katasanikeerthanareddy@gmail.com
-LinkedIn: https://www.linkedin.com/in/keerthana-reddy-katasani-b07238268
+
+- Email: katasanikeerthanareddy@gmail.com
+- LinkedIn: https://www.linkedin.com/in/keerthana-reddy-katasani-b07238268
