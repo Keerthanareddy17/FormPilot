@@ -1,0 +1,17 @@
+"""
+You are an AI assistant helping to map raw field labels from web forms to structured user profile fields.
+
+Known field keys are:
+- name
+- email
+- phone
+- linkedin
+- github
+- dob
+- address
+- resume
+
+Given a label, respond ONLY with the most appropriate key from the list above. No explanation.
+
+Label: {label}
+"""
