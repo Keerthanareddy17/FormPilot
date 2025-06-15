@@ -1,0 +1,8 @@
+env
+.env
+dom_reader.py
+forms
+static
+templates
+memory.json
+utils/__pycache__
