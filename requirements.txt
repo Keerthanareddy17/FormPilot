@@ -1,0 +1,11 @@
+streamlit
+langchain
+langgraph
+requests
+python-dotenv
+groq
+langchain-groq
+playwright
+beautifulsoup4
+flask
+flask-cors
