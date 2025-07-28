@@ -26,7 +26,9 @@ This project combines the following components:
 - **LangGraph**: To model a multi-step reasoning process for parsing, memory lookup, and fallback filling.
 - **LangChain**: Used for field mapping.
 - **Flask**: Lightweight server to render forms and handle frontend updates. Used for testing the overall flow and memory updating capabilities!!
-- **Local Memory (JSON)**: Persistent state to simulate long-term memory and track field values.\## 🔰 Tech Stack
+- **Local Memory (JSON)**: Persistent state to simulate long-term memory and track field values.
+
+## 🔰 Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3.11-green?logo=python)
 ![Flask](https://img.shields.io/badge/Flask-%20Microframework-yellow?logo=flask)
